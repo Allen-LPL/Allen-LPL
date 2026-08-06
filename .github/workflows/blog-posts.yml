@@ -1,0 +1,28 @@
+name: Latest blog posts
+
+# Pulls the newest posts from the blog RSS feed and writes them into README.md
+# between the BLOG-POST-LIST markers. No token/secret needed.
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pull latest posts into README
+        uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://www.liupengliang.com/index.xml"
+          max_post_count: 5
+          template: "- [$title]($url) <sub>$date</sub>$newline"
+          date_format: "yyyy-mm-dd"
+          commit_message: "chore: refresh latest blog posts"

@@ -34,15 +34,25 @@ focus:       from-0-to-1 product & architecture · distributed high-availability
 superpower:  build the system, harden it under real fire (DDoS/CC, 10T migrations), lead the team
 ```
 
-**Architect who ships end-to-end** — 从 0 到 1、从 1 到 100，多款产品与架构落地，兼具软硬件一体化系统开发经验。
+**Architect who ships end-to-end** — 从 0 到 1、从 1 到 100，多款产品与架构落地，兼具软硬件一体化系统开发经验。后端、AI 算法、分布式、微服务、嵌入式硬件通信全栈覆盖，能独当一面，也能带队交付。
 
-- **AI-native systems** — enterprise **RAG** dialogue, search & recommendation, large-scale vector retrieval (**ES + Milvus**), recall/ranking strategies.
-- **High concurrency & HA** — OpenResty 网关限流降级、Redis 削峰、读写分离/分库分表、同步转异步、混合云（阿里云 + IDC）多活容灾。
-- **Battle-tested** — 抵御 **600G DDoS + 15G CC** 混合攻击；**10T MongoDB / 550G MySQL** 无感迁移。
-- **Team builder** — 从 0 组建并管理 **10–50 人** 团队，招聘、绩效、流程规范与工程效能。
+## Impact / 硬核战绩
 
-> Currently building **medical-emergency AI training systems** — Android tablets talking to CPR/AED
-> manikins over BLE/UART, with real-time AI digital-human dialogue. 软硬件一体，从内核到话术。
+<div align="center">
+
+<img src="https://img.shields.io/badge/0%E2%86%921_Products-multiple-38bdf8?style=for-the-badge&labelColor=0e1524" alt="0 to 1 products" />
+<img src="https://img.shields.io/badge/DDoS_Defended-600G_+_15G_CC-f5b451?style=for-the-badge&labelColor=0e1524" alt="ddos defended" />
+<img src="https://img.shields.io/badge/Data_Migrated-10T_Mongo_%2F_550G_MySQL-38bdf8?style=for-the-badge&labelColor=0e1524" alt="data migrated" />
+<img src="https://img.shields.io/badge/Business_Growth-8%C3%97_on_one_arch-f5b451?style=for-the-badge&labelColor=0e1524" alt="business growth" />
+<br/>
+<img src="https://img.shields.io/badge/Search_Latency-%E2%88%9280%25-38bdf8?style=for-the-badge&labelColor=0e1524" alt="search latency down 80 percent" />
+<img src="https://img.shields.io/badge/Vector_Search-5M_images-f5b451?style=for-the-badge&labelColor=0e1524" alt="vector search 5M" />
+<img src="https://img.shields.io/badge/Teams_Led-up_to_50_(org_104)-38bdf8?style=for-the-badge&labelColor=0e1524" alt="teams led" />
+<img src="https://img.shields.io/badge/Hybrid_Cloud-multi--active-f5b451?style=for-the-badge&labelColor=0e1524" alt="hybrid cloud multi active" />
+
+</div>
+
+<div align="center"><sub>每个数字都来自线上：真实攻防、真实迁移、真实增长、真实带队。</sub></div>
 
 ## Tech Stack
 
@@ -69,21 +79,31 @@ superpower:  build the system, harden it under real fire (DDoS/CC, 10T migration
 
 ## Key Projects / 核心项目
 
-| Project | What it is | Stack highlights | Link |
-| --- | --- | --- | --- |
-| **时刻体育** · Moment Sports | 从 0→1 体育社区平台（小程序 / H5 / APP），高并发、灰度发布、混合云多活 | Spring Boot · Nacos · ES · Redis · RabbitMQ · Vue3 · Uniapp · OpenResty | — |
-| **AI 论文/图像查重** · Similarity Check | RAG + **5M** 小图向量检索的科研查重系统（篇内/策略/全库三种模式，专家三级审核） | Milvus · CLIP · DINOv2 · Swin · ResNet50 · Spring Boot · Vue3 | [demo](https://seven.weilantech.com) · [code](https://github.com/Allen-LPL/seven-server) |
-| **CPR AI 训练与考核系统** | 医疗急救 **软硬件一体化**：Android 平板 ↔ 模拟人/AED，多协议通信 + AI 数字人对话 | Android · Spring Boot · BLE/UART/Socket · OpenGL · 讯飞/腾讯云 SDK | — |
-| **Mydesign** · Cross-border DTC | 跨境电商独立站出海，AWS 部署、千人千面搜索/推荐、跨境数据同步与加速 | Spring Boot · ES · AWS · Vue3 · Python | — |
+<sub>Role tags: **主导** = led & core-built · **独立** = solo-built · **0→1** = from scratch</sub>
 
-<sub>More open source → <a href="https://github.com/Allen-LPL/Captcha-Pic">Captcha-Pic</a> (Go 拼图验证) · <a href="https://github.com/Allen-LPL/Laradock">Laradock 二开</a> (生产级 Docker 编排) · <a href="https://github.com/Allen-LPL/webCron">webCron</a> (Beego 分布式定时任务)</sub>
+| Project | Role & Impact — 优势关键词加粗 | Stack | Link |
+| --- | --- | --- | --- |
+| **时刻体育** · Moment Sports | **主导 · 0→1** — **独立完成核心后端**与部分前端，**混合云多活**（阿里云→阿里云+IDC），灰度/滚动发布，高并发下 **读写分离 · 分库分表 · MQ 补偿** | Spring Boot · Nacos · ES · Redis · RabbitMQ · Vue3 · Uniapp · OpenResty | — |
+| **AI 论文/图像查重** · Similarity Check | **主导 · toG 交付** — **RAG** + **500 万小图向量检索**，内网**数据安全隔离**交付，**专家三级审核**，篇内/策略/全库三模式 | **Milvus** · CLIP · DINOv2 · Swin · ResNet50 · Spring Boot · Vue3 | [demo](https://seven.weilantech.com) · [code](https://github.com/Allen-LPL/seven-server) |
+| **CPR AI 训练与考核系统** | **技术总监 · 软硬一体** — Android 平板 ↔ 多品牌**模拟人/AED** 的 **BLE/UART/Socket 多协议通信**，**AI 数字人**实时对话（SSE + OpenGL 口型同步） | Android · Spring Boot · BLE/UART/Socket · OpenGL · 讯飞/腾讯云 | — |
+| **Mydesign** · Cross-border DTC | **主导 · 出海增长** — **AWS** 全球部署，**千人千面**搜索/推荐工程化，跨境数据同步与**国内访问加速** | Spring Boot · ES · AWS · Vue3 · Python | — |
+
+**Also solo-operated / 独立操盘的架构：**
+**螃蟹游戏账号交易网** — **独立一人完成 1.0 架构**，单机 → **多活高可用**，**8× 业务增长**，抵御 **600G DDoS + 15G CC**，搜索 **RT −80%** · &nbsp; **聚享游** — **PHP→Java 重构**（50W 日活 / 3000 QPS），高可用多活，抵御 **400G DDoS**。
+
+## Open Source / 开源与独立维护
+
+- **[seven-server](https://github.com/Allen-LPL/seven-server)** — **AI 论文/图像查重**：**RAG** + 向量检索 + 三级审核，[**在线演示**](https://seven.weilantech.com)。
+- **[Captcha-Pic](https://github.com/Allen-LPL/Captcha-Pic)** · **[tncode](https://github.com/Allen-LPL/tncode)** — **生产使用**的**拼图滑块验证**，**Go + PHP 双实现**，仿极验交互。
+- **[Laradock 二开](https://github.com/Allen-LPL/Laradock)** — **生产级 Docker 编排**：内置 **OpenResty-WAF · Golang · Python · Xhprof · GitLab-Runner · Filebeat**。
+- **[webCron](https://github.com/Allen-LPL/webCron)** `★8` — **Go / Beego** 的**分布式可视化定时任务**：秒级调度、角色/权限管理、进程终点控制。
 
 ## AI Systems & Tooling
 
 **What I build with AI / 用 AI 构建的系统**
 
-- **RAG & vector search** — enterprise retrieval over **ElasticSearch + Milvus**, recall → filter → rerank; 500 万小图向量索引与检索工程化落地。
-- **Multimodal & real-time** — 大模型 **SSE 流式对话** + 逐句 TTS，**OpenGL 透明通道数字人** 口型同步，讯飞语音唤醒 + 腾讯云 ASR/TTS 全链路。
+- **RAG & vector search** — enterprise retrieval over **ElasticSearch + Milvus**, recall → filter → rerank; **500 万小图向量**索引与检索工程化落地。
+- **Multimodal & real-time** — 大模型 **SSE 流式对话** + 逐句 TTS，**OpenGL 透明通道数字人**口型同步，讯飞语音唤醒 + 腾讯云 ASR/TTS 全链路。
 - **Computer vision** — 图像相似度：CLIP / DINOv2 / Swin Transformer / ResNet50 / DenseNet121，SIFT·SURF 特征点匹配。
 
 **AI-native dev workflow / 日常 AI 工具栈**
@@ -124,6 +144,14 @@ superpower:  build the system, harden it under real fire (DDoS/CC, 10T migration
 -->
 
 </div>
+
+## Latest Writing / 近期文章
+
+<!-- BLOG-POST-LIST:START -->
+<!-- posts auto-updated from https://www.liupengliang.com/index.xml by a GitHub Action -->
+<!-- BLOG-POST-LIST:END -->
+
+<div align="right"><sub><a href="https://www.liupengliang.com">→ 更多文章 / more on the blog</a></sub></div>
 
 ## Contribution Snake
 
