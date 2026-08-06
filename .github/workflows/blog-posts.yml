@@ -23,6 +23,9 @@ jobs:
         with:
           feed_list: "https://www.liupengliang.com/index.xml"
           max_post_count: 5
-          template: "- [$title]($url) <sub>$date</sub>$newline"
+          # Leading $newline forces the first item off the marker line, otherwise
+          # it glues to `<!-- ...START -->`, becomes an HTML block, and the first
+          # link renders as a raw URL instead of its title.
+          template: "$newline- [$title]($url) <sub>$date</sub>"
           date_format: "yyyy-mm-dd"
           commit_message: "chore: refresh latest blog posts"
