@@ -1,0 +1,65 @@
+name: Generate metrics
+
+# Bakes an aggregate stats SVG (languages %, commits, activity, 3D calendar) into
+# the repo. With a token that has `repo` scope it reads your PRIVATE repositories
+# too — but only ever writes AGGREGATE NUMBERS to metrics.svg, never any source.
+#
+# One-time setup:
+#   1. Create a classic PAT with scopes: repo, read:user
+#      https://github.com/settings/tokens
+#   2. Add it as a secret named METRICS_TOKEN:
+#      gh secret set METRICS_TOKEN --body <PAT> -R Allen-LPL/Allen-LPL
+#   3. Run this workflow once (Actions tab → Run workflow), then uncomment the
+#      metrics <img> in README.md.
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  # NOTE: intentionally NO `push` trigger — this job commits metrics.svg to main
+  # using METRICS_TOKEN (a PAT), and a PAT-authored push WOULD re-trigger the
+  # workflow, causing an infinite loop. Schedule + manual dispatch only.
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate metrics.svg
+        uses: lowlighter/metrics@latest
+        with:
+          # PAT with repo + read:user scope → includes private contributions
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Allen-LPL
+          filename: metrics.svg
+          template: classic
+          config_timezone: Asia/Shanghai
+
+          # dark theme to match the profile
+          extras_css: |
+            :root { --color-calendar-graph-day-bg: #16233d; }
+            body { background: #0e1524 !important; }
+            .field, h2, .title, table, tr, td, .row { color: #c9d4e5 !important; }
+            svg { background: #0e1524 !important; }
+            a, .accent { color: #38bdf8 !important; }
+
+          # core cards (private repos counted via the token)
+          base: header, activity, community, repositories, metadata
+          repositories_affiliations: owner, collaborator, organization_member
+
+          # language breakdown — the real proof of technical breadth (incl. private)
+          plugin_languages: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_categories: markup, programming
+          plugin_languages_colors: github
+          plugin_languages_limit: 10
+          plugin_languages_recent_categories: markup, programming
+          plugin_languages_sections: most-used
+          plugin_languages_details: bytes-size, percentage
+
+          # 3D contribution calendar (includes private if enabled on your profile)
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year

@@ -5,9 +5,11 @@
 
 <div align="center">
 
-<!-- [1] HERO — animated typing banner -->
+<!-- [1] HERO — designed wave banner + animated typing subtitle -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0e1524,100:1e3a5f&height=190&section=header&text=Pengliang%20Liu&fontSize=46&fontColor=e6f2ff&fontAlignY=38&desc=Technical%20Director%20%C2%B7%20Full-Stack%20Architect%20%C2%B7%2011y&descSize=17&descColor=9fd0ee&descAlignY=60" alt="Pengliang Liu — Technical Director / Full-Stack Architect" width="100%" />
+
 <a href="https://cv.liupengliang.com">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&color=38BDF8&center=true&vCenter=true&width=760&height=54&lines=Technical+Director+%C2%B7+Full-Stack+Architect;11+years+%C2%B7+Go+%2F+Java+%2F+Python+%2F+PHP+%2F+Android;%E4%BB%8E0%E5%88%B01+%C2%B7+Distributed+%C2%B7+High+Availability+%C2%B7+DevOps;AI+%2F+RAG+%C2%B7+Vector+Search+%C2%B7+Software%E2%80%94Hardware" alt="Technical Director · Full-Stack Architect" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=760&height=48&lines=Go+%2F+Java+%2F+Python+%2F+PHP+%2F+Android;%E4%BB%8E0%E5%88%B01+%C2%B7+Distributed+%C2%B7+High+Availability+%C2%B7+DevOps;AI+%2F+RAG+%C2%B7+Vector+Search+%C2%B7+Software%E2%80%94Hardware+Integration;Built+it+%C2%B7+Hardened+it+under+real+fire+%C2%B7+Led+the+team" alt="focus areas" />
 </a>
 
 <p>
@@ -22,9 +24,7 @@
 
 </div>
 
----
-
-## 👋 About / 关于
+## About / 关于
 
 ```yaml
 name:        刘鹏亮 (Pengliang Liu)  ·  "Allen"
@@ -34,27 +34,29 @@ focus:       from-0-to-1 product & architecture · distributed high-availability
 superpower:  build the system, harden it under real fire (DDoS/CC, 10T migrations), lead the team
 ```
 
-- 🏗️ **Architect who ships end-to-end** — 从 0 到 1、从 1 到 100，多款产品与架构落地，兼具软硬件一体化系统开发经验。
-- 🤖 **AI-native systems** — enterprise **RAG** dialogue, search & recommendation, large-scale vector retrieval (**ES + Milvus**), recall/ranking strategies.
-- ⚡ **High concurrency & HA** — OpenResty 网关限流降级、Redis 削峰、读写分离/分库分表、同步转异步、混合云（阿里云 + IDC）多活容灾。
-- 🛡️ **Battle-tested** — 抵御 **600G DDoS + 15G CC** 混合攻击；**10T MongoDB / 550G MySQL** 无感迁移。
-- 👥 **Team builder** — 从 0 组建并管理 **10–50 人** 团队，招聘、绩效、流程规范与工程效能。
+**Architect who ships end-to-end** — 从 0 到 1、从 1 到 100，多款产品与架构落地，兼具软硬件一体化系统开发经验。
 
----
+- **AI-native systems** — enterprise **RAG** dialogue, search & recommendation, large-scale vector retrieval (**ES + Milvus**), recall/ranking strategies.
+- **High concurrency & HA** — OpenResty 网关限流降级、Redis 削峰、读写分离/分库分表、同步转异步、混合云（阿里云 + IDC）多活容灾。
+- **Battle-tested** — 抵御 **600G DDoS + 15G CC** 混合攻击；**10T MongoDB / 550G MySQL** 无感迁移。
+- **Team builder** — 从 0 组建并管理 **10–50 人** 团队，招聘、绩效、流程规范与工程效能。
 
-## 🧰 Tech Stack
+> Currently building **medical-emergency AI training systems** — Android tablets talking to CPR/AED
+> manikins over BLE/UART, with real-time AI digital-human dialogue. 软硬件一体，从内核到话术。
+
+## Tech Stack
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=go,java,python,php,lua,typescript,vue,spring,android,kotlin&perline=10" alt="languages" />
+<img src="https://skillicons.dev/icons?i=go,java,python,php,lua,typescript,vue,spring,androidstudio,kotlin&perline=10" alt="languages" />
 <br/>
 <img src="https://skillicons.dev/icons?i=mysql,redis,mongodb,elasticsearch,kafka,rabbitmq,docker,kubernetes,nginx,linux&perline=10" alt="data & infra" />
 <br/>
-<img src="https://skillicons.dev/icons?i=grafana,prometheus,gitlab,git,ansible,aws,tensorflow,pytorch,opengl,cpp&perline=10" alt="devops & ai" />
+<img src="https://skillicons.dev/icons?i=grafana,prometheus,gitlab,git,ansible,aws,tensorflow,pytorch,cpp,bash&perline=10" alt="devops & ai" />
 
 </div>
 
-<sub>**+ specialties not in the icon set:** OpenResty · gRPC/Protobuf · Nacos · Consul · Milvus · Canal · Zabbix · Hyperf · Beego · Gin · 自研 WAF · UART(RS485/RS232/TTL) · Bluetooth</sub>
+<sub>**+ specialties not in the icon set:** OpenResty · gRPC/Protobuf · Nacos · Consul · Milvus · Canal · Zabbix · Hyperf · Beego · Gin · OpenGL · 自研 WAF · UART(RS485/RS232/TTL) · Bluetooth</sub>
 
 | Area | Stack |
 | --- | --- |
@@ -65,9 +67,7 @@ superpower:  build the system, harden it under real fire (DDoS/CC, 10T migration
 | **Mobile / Hardware** | Android (Retrofit/OkHttp/AIDL/ijkplayer/OpenGL) · Bluetooth · UART · Socket |
 | **AI / Algorithms** | RAG · SSE streaming · CLIP · DINOv2 · Swin Transformer · ResNet50 · DenseNet121 · SIFT/SURF |
 
----
-
-## 🚀 Key Projects / 核心项目
+## Key Projects / 核心项目
 
 | Project | What it is | Stack highlights | Link |
 | --- | --- | --- | --- |
@@ -78,9 +78,7 @@ superpower:  build the system, harden it under real fire (DDoS/CC, 10T migration
 
 <sub>More open source → <a href="https://github.com/Allen-LPL/Captcha-Pic">Captcha-Pic</a> (Go 拼图验证) · <a href="https://github.com/Allen-LPL/Laradock">Laradock 二开</a> (生产级 Docker 编排) · <a href="https://github.com/Allen-LPL/webCron">webCron</a> (Beego 分布式定时任务)</sub>
 
----
-
-## 🤖 AI Systems & Tooling
+## AI Systems & Tooling
 
 **What I build with AI / 用 AI 构建的系统**
 
@@ -99,38 +97,35 @@ superpower:  build the system, harden it under real fire (DDoS/CC, 10T migration
 
 <sub>Daily driver: **Claude Code (MAX + API)** for agentic coding & architecture. Also **ChatGPT Pro/Plus + API** and **Copilot** for breadth, **Figma** for design. 全流程 AI 辅助研发。</sub>
 
----
+## GitHub Stats
 
-## 📊 GitHub Stats
+> Green squares, the activity graph and the snake below **include my private contributions**
+> (anonymized — commit *counts* only, never repo names or source). Most of my work lives in
+> private repos; this reflects the real cadence and breadth.
 
 <div align="center">
 
-<!--
-  Stats card + Top languages are DISABLED because the public github-readme-stats
-  instance is over its GitHub-API quota (HTTP 503). To turn them back on: self-host
-  github-readme-stats (see PUSH.md step 4), replace the host below with your own
-  domain, and delete these comment markers. The theme params already match.
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Allen-LPL&bg_color=0e1524&color=e6f2ff&title_color=38bdf8&line=38bdf8&point=f5b451&area=true&area_color=1e3a5f&hide_border=true&custom_title=Contribution%20Activity" alt="activity graph" width="100%" />
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Allen-LPL&show_icons=true&count_private=true&hide_border=true&title_color=38bdf8&icon_color=38bdf8&text_color=c9d4e5&bg_color=0e1524" alt="stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Allen-LPL&layout=compact&langs_count=8&hide_border=true&title_color=38bdf8&text_color=c9d4e5&bg_color=0e1524" alt="top langs" />
 <br/>
--->
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=Allen-LPL&hide_border=true&background=0e1524&stroke=1f2b45&ring=38bdf8&fire=f5b451&currStreakLabel=38bdf8&sideLabels=c9d4e5&dates=64748b&currStreakNum=c9d4e5&sideNums=c9d4e5&dayLabels=c9d4e5&titleColor=38bdf8" alt="streak" />
 
 <!--
-  Trophy is DISABLED because the public github-profile-trophy instance is over its
-  Vercel quota (HTTP 402). Self-host it (PUSH.md step 4) and uncomment to enable.
-
+  PRIVATE-INCLUSIVE STATS via lowlighter/metrics (baked SVG in this repo, never rate-limited,
+  and able to read your PRIVATE repos for real language % + commit totals — aggregate numbers
+  only, no code exposed). To enable:
+    1. Create a classic PAT with scopes  repo, read:user  →  https://github.com/settings/tokens
+    2. gh secret set METRICS_TOKEN --body <PAT> -R Allen-LPL/Allen-LPL
+    3. Actions tab → run "Generate metrics" once (creates metrics.svg on main)
+    4. Delete these comment markers.
 <br/>
-<img src="https://github-profile-trophy.vercel.app/?username=Allen-LPL&theme=onedark&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="trophies" />
+<img src="https://raw.githubusercontent.com/Allen-LPL/Allen-LPL/main/metrics.svg" alt="metrics — languages & stats incl. private" width="100%" />
 -->
 
 </div>
 
----
-
-## 🐍 Contribution Snake
+## Contribution Snake
 
 <div align="center">
 
@@ -142,9 +137,7 @@ superpower:  build the system, harden it under real fire (DDoS/CC, 10T migration
 
 </div>
 
----
-
-## 🔗 Connect
+## Connect
 
 <div align="center">
 
@@ -155,6 +148,8 @@ superpower:  build the system, harden it under real fire (DDoS/CC, 10T migration
   <img src="https://img.shields.io/badge/Online%20CV-cv.liupengliang.com-f5b451?style=for-the-badge&logo=readdotcv&logoColor=white" alt="online cv" />
 </a>
 
-</div>
+<br/><br/>
 
-<div align="center"><sub>⚙️ Architected end-to-end · shipped under real load · 从代码到团队</sub></div>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e3a5f,100:0e1524&height=110&section=footer&text=Architected%20end-to-end%20%C2%B7%20shipped%20under%20real%20load&fontSize=15&fontColor=9fd0ee&fontAlignY=72" alt="" width="100%" />
+
+</div>
