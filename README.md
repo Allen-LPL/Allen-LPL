@@ -103,6 +103,10 @@ superpower:  build the system, harden it under real fire (DDoS/CC, 10T migration
 
 ## 📊 GitHub Stats
 
+<!-- NOTE: the stats/top-langs/trophy images use public community instances that
+     are often rate-limited (503/402). For rock-solid rendering, self-host them
+     and swap the host here — see PUSH.md step 4. -->
+
 <div align="center">
 
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=Allen-LPL&show_icons=true&count_private=true&hide_border=true&title_color=38bdf8&icon_color=38bdf8&text_color=c9d4e5&bg_color=0e1524" alt="stats" />

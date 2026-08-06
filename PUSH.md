@@ -50,6 +50,40 @@ on their own.
 
 ---
 
+## 4. (Recommended) Self-host the two flaky widgets
+
+Two widgets in the README use community-hosted instances that are frequently
+rate-limited / over-quota:
+
+- **Stats card + Top languages** → `github-readme-stats.vercel.app` (often `503`)
+- **Trophy** → `github-profile-trophy.vercel.app` (often `402`)
+
+They render only when those shared instances happen to be up. For a profile that
+never shows broken images, deploy your own copies (free) and swap the host in
+`README.md`.
+
+**github-readme-stats (stats + top-langs):**
+
+1. Fork <https://github.com/anuraghazra/github-readme-stats>.
+2. Create a GitHub **Personal Access Token** (classic, no scopes needed for public
+   stats; add `repo` if you want `count_private=true`).
+3. Import the fork into <https://vercel.com>, add env var `PAT_1 = <your token>`,
+   deploy. You get e.g. `https://grs-allen.vercel.app`.
+4. In `README.md`, replace both `github-readme-stats.vercel.app` occurrences with
+   your domain. All the `*_color` / `bg_color` params carry over unchanged.
+
+**github-profile-trophy:**
+
+1. Fork <https://github.com/ryo-ma/github-profile-trophy>, deploy to Vercel the
+   same way (env var `GITHUB_TOKEN = <your token>`).
+2. Replace `github-profile-trophy.vercel.app` in `README.md` with your domain.
+
+> Alternatively, just delete the "GitHub Stats" stats/top-langs images and/or the
+> trophy line — the streak card, typing banner, skill icons and visitor counter
+> all work off reliable hosts and need no setup.
+
+---
+
 ### Notes
 
 - **Payment screenshots were intentionally left out.** A profile is fully public;
@@ -58,5 +92,3 @@ on their own.
 - All widget colors are matched to your cv site (navy `#0e1524`, cyan `#38bdf8`,
   amber `#f5b451`). To retheme, edit the `*_color` / `bg_color` query params in
   the image URLs.
-- Some stat cards are rate-limited on the public Vercel instance; if one shows an
-  error, it self-recovers, or you can self-host `github-readme-stats`.
