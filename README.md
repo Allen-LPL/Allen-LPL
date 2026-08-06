@@ -103,22 +103,28 @@ superpower:  build the system, harden it under real fire (DDoS/CC, 10T migration
 
 ## 📊 GitHub Stats
 
-<!-- NOTE: the stats/top-langs/trophy images use public community instances that
-     are often rate-limited (503/402). For rock-solid rendering, self-host them
-     and swap the host here — see PUSH.md step 4. -->
-
 <div align="center">
+
+<!--
+  Stats card + Top languages are DISABLED because the public github-readme-stats
+  instance is over its GitHub-API quota (HTTP 503). To turn them back on: self-host
+  github-readme-stats (see PUSH.md step 4), replace the host below with your own
+  domain, and delete these comment markers. The theme params already match.
 
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=Allen-LPL&show_icons=true&count_private=true&hide_border=true&title_color=38bdf8&icon_color=38bdf8&text_color=c9d4e5&bg_color=0e1524" alt="stats" />
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Allen-LPL&layout=compact&langs_count=8&hide_border=true&title_color=38bdf8&text_color=c9d4e5&bg_color=0e1524" alt="top langs" />
-
 <br/>
+-->
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=Allen-LPL&hide_border=true&background=0e1524&stroke=1f2b45&ring=38bdf8&fire=f5b451&currStreakLabel=38bdf8&sideLabels=c9d4e5&dates=64748b&currStreakNum=c9d4e5&sideNums=c9d4e5&dayLabels=c9d4e5&titleColor=38bdf8" alt="streak" />
 
-<br/>
+<!--
+  Trophy is DISABLED because the public github-profile-trophy instance is over its
+  Vercel quota (HTTP 402). Self-host it (PUSH.md step 4) and uncomment to enable.
 
+<br/>
 <img src="https://github-profile-trophy.vercel.app/?username=Allen-LPL&theme=onedark&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="trophies" />
+-->
 
 </div>
 
