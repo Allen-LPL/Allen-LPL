@@ -16,8 +16,7 @@ import html
 import os
 
 # ─────────────────────────── content (edit here) ───────────────────────────
-NAME_EN = "Pengliang Liu"
-NAME_CN = "刘鹏亮"
+NAME_EN = "Allen"
 ROLE_CAPS = "TECHNICAL DIRECTOR / FULL-STACK ARCHITECT · 11Y"
 PITCH = "I build medical-AI systems end to end — from algorithms to hardware."
 PITCH_CN = "从算法到硬件，独当一面。"
@@ -60,10 +59,10 @@ def hero_svg(p: dict) -> str:
     W, H = 880, 206
     x0 = 10
     focus = "   ·   ".join(FOCUS)
+    rule_w = max(64, int(len(NAME_EN) * 19))  # accent underline ≈ name width
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{esc(NAME_EN)} — {esc(ROLE_CAPS)}">
   <text x="{x0}" y="56" font-family="{SANS}" font-size="38" font-weight="700" fill="{p['text']}">{esc(NAME_EN)}</text>
-  <text x="{x0+312}" y="56" font-family="{SANS}" font-size="18" fill="{p['muted']}">{esc(NAME_CN)}</text>
-  <rect x="{x0+2}" y="74" width="208" height="3" rx="1.5" fill="{p['accent']}"/>
+  <rect x="{x0+2}" y="74" width="{rule_w}" height="3" rx="1.5" fill="{p['accent']}"/>
   <text x="{x0}" y="106" font-family="{MONO}" font-size="12.5" letter-spacing="2.4" fill="{p['accent']}">{esc(ROLE_CAPS)}</text>
   <text x="{x0}" y="144" font-family="{SANS}" font-size="16.5" fill="{p['text']}">{esc(PITCH)}</text>
   <text x="{x0}" y="172" font-family="{MONO}" font-size="13" fill="{p['muted']}">{esc(focus)}</text>
