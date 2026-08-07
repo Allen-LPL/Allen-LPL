@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 244" width="880" height="244" role="img" aria-label="Pengliang Liu — Technical Director · Full-Stack Architect · 11y">
+  <defs>
+    <linearGradient id="acc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.92" cy="0.08" r="0.7">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="1" y="1" width="878" height="242" rx="18" fill="#0e1524" stroke="#1f2b45" stroke-width="1.5"/>
+  <rect x="1" y="1" width="878" height="242" rx="18" fill="url(#glow)"/>
+  <rect x="16" y="22" width="5" height="200" rx="2.5" fill="url(#acc)"/>
+  <text x="34" y="60" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="33" font-weight="700" fill="#e6f2ff">Pengliang Liu</text>
+  <text x="266" y="60" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="18" fill="#9fb2c9">刘鹏亮</text>
+  <text x="34" y="90" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14.5" fill="#38bdf8">Technical Director · Full-Stack Architect · 11y</text>
+  <text x="34" y="128" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="17" font-weight="600" fill="#e6f2ff">Architect who ships AI under real fire —</text>
+  <text x="34" y="152" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="15" fill="#e6f2ff">RAG &amp; multimodal systems on distributed, attack-hardened infra.</text>
+  <text x="34" y="178" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="13.5" fill="#9fb2c9">从算法到硬件，独当一面。</text>
+  <rect x="34" y="200" width="97" height="24" rx="12" fill="#12203a" stroke="#274063"/><text x="82" y="216" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#38bdf8" text-anchor="middle">medical-AI</text><rect x="140" y="200" width="46" height="24" rx="12" fill="#12203a" stroke="#274063"/><text x="163" y="216" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#38bdf8" text-anchor="middle">RAG</text><rect x="195" y="200" width="119" height="24" rx="12" fill="#12203a" stroke="#274063"/><text x="254" y="216" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#38bdf8" text-anchor="middle">multimodal CV</text><rect x="323" y="200" width="104" height="24" rx="12" fill="#12203a" stroke="#274063"/><text x="375" y="216" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#38bdf8" text-anchor="middle">forecasting</text><rect x="436" y="200" width="148" height="24" rx="12" fill="#12203a" stroke="#274063"/><text x="510" y="216" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#38bdf8" text-anchor="middle">software–hardware</text>
+</svg>
