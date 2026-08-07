@@ -117,10 +117,10 @@ superpower:  build the system, harden it under real fire (DDoS/CC, 10T migration
 
 <!-- BLOG-POST-LIST:START -->
 - [Linux服务器中git命令终端渲染出现问号](http://liupengliang.com/posts/%E8%BF%90%E7%BB%B4/linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%ADgit%E5%87%BA%E7%8E%B0%E5%A4%A7%E9%87%8F%E9%97%AE%E5%8F%B7%E7%9A%84%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/) <sub>2023-05-22</sub>
+- [etcd和etcdKeeper的docker-compose的使用](http://liupengliang.com/posts/%E6%9E%B6%E6%9E%84/%E6%9E%B6%E6%9E%84/) <sub>2023-02-24</sub>
 - [etcd和etcdKeeper的docker-compose的使用](http://liupengliang.com/posts/%E8%BF%90%E7%BB%B4/etcd%E5%92%8Cetcdkeeper%E7%9A%84docker-compose%E7%9A%84%E4%BD%BF%E7%94%A8/) <sub>2023-02-24</sub>
 - [Nginx报ERR_CONNECTION_CLOSED的解决现场](http://liupengliang.com/posts/nginx/nginx-http2-header%E5%A4%B4%E6%95%B0%E6%8D%AE%E6%97%A0%E6%B3%95%E8%8E%B7%E5%8F%96/) <sub>2023-01-16</sub>
-- [大数据 - 从0到1实现搜索推荐](http://liupengliang.com/posts/bigdata/%E5%A4%A7%E6%95%B0%E6%8D%AE-%E4%BB%8E0%E5%88%B01%E5%AE%9E%E7%8E%B0%E6%90%9C%E7%B4%A2%E6%8E%A8%E8%8D%90/) <sub>2023-01-14</sub>
-<!-- BLOG-POST-LIST:END -->
+- [大数据 - 从0到1实现搜索推荐](http://liupengliang.com/posts/bigdata/%E5%A4%A7%E6%95%B0%E6%8D%AE-%E4%BB%8E0%E5%88%B01%E5%AE%9E%E7%8E%B0%E6%90%9C%E7%B4%A2%E6%8E%A8%E8%8D%90/) <sub>2023-01-14</sub><!-- BLOG-POST-LIST:END -->
 
 <div align="right"><sub><a href="https://www.liupengliang.com">→ 更多文章</a></sub></div>
 
