@@ -7,8 +7,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Allen-LPL/Allen-LPL/main/img/hero-dark.svg" />
-  <img alt="Pengliang Liu — Technical Director / Full-Stack Architect · 11y" src="https://raw.githubusercontent.com/Allen-LPL/Allen-LPL/main/img/hero-light.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Allen-LPL/Allen-LPL/main/img/hero-dark.svg?v=2" />
+  <img alt="Pengliang Liu — Technical Director / Full-Stack Architect · 11y" src="https://raw.githubusercontent.com/Allen-LPL/Allen-LPL/main/img/hero-light.svg?v=2" width="100%" />
 </picture>
 
 <p>
